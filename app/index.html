@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="Main_section">
+      <section class="section1">
+        <div class="details">
+          <div class="details__container">
+            <div class="details__container_heading">
+              <h1>Welcome Back</h1>
+              <p>Welcome Back please Enter Your Details</p>
+            </div>
+
+            <div class="details__container_inputs">
+              <div>
+                <input
+                  class="details__container_inputs_input"
+                  type="text"
+                  placeholder="Enter Your Email"
+                  id="email"
+                  onkeyup="validateInputs(id)"
+                /><span id="icon"></span>
+              </div>
+              <div>
+                <input
+                  class="details__container_inputs_input"
+                  type="text"
+                  placeholder="Enter Your Username"
+                  id="username"
+                  onkeyup="validateInputs(id)"
+                /><span id="icon"></span>
+              </div>
+              <div>
+                <input
+                  class="details__container_inputs_input"
+                  type="password"
+                  placeholder="Enter Your Password"
+                  id="password"
+                  onkeyup="validateInputs(id)"
+                /><span id="icon"></span>
+              </div>
+            </div>
+
+            <div class="details__container_rem">
+              <div>
+                <input type="checkbox" /> <label>Remember for 30 days</label>
+              </div>
+              <p>Forgot Password</p>
+            </div>
+
+            <div class="details__container_buttons">
+              <button>Sign in</button>
+              <button>Sign in With Google</button>
+            </div>
+
+            <div class="details__container_footer">
+              <p>Don't have an account ? <span>SignUp for free</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section2">
+        <div class="image">
+          <img
+            class="image__hero"
+            src="https://images.unsplash.com/photo-1675246198368-6df2c68bf16f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2835&q=80"
+          />
+
+          <div class="image__banner_card">
+            <h1 class="image__banner_card_heading">
+              "We have been using this website to kickstart our every new
+              projectand can't imagine working without it."
+            </h1>
+            <div class="image__banner_card_details">
+              <div class="image__banner_card_details_name">
+                <h1>Andi Lane</h1>
+                <p>Founder,CataLog</p>
+                <span>Web design agency</span>
+              </div>
+              <div class="image__banner_card_details_review">
+                <img src="./pngfind.com-five-stars-png-361938.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
